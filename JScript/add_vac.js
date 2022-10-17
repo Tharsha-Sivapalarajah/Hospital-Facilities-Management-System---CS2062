@@ -1,0 +1,38 @@
+var lat =document.querySelector("#lat");
+var lng =document.querySelector("#lon");
+
+
+
+function initMap() {
+    const myLatlng = { lat: 8.769945, lng: 80.4979 };
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 4,
+      center: myLatlng,
+    });
+    // Create the initial InfoWindow.
+    let infoWindow = new google.maps.InfoWindow({
+      content: "Click the map to get Lat/Lng!",
+      position: myLatlng,
+    });
+  
+    infoWindow.open(map);
+    // Configure the click listener.
+    map.addListener("click", (mapsMouseEvent) => {
+      // Close the current InfoWindow.
+      infoWindow.close();
+
+      lat.placeholder=mapsMouseEvent.latLng.lat();
+      lng.placeholder=mapsMouseEvent.latLng.lng();
+      lat.value=mapsMouseEvent.latLng.lat();
+      lng.value=mapsMouseEvent.latLng.lng();
+
+      // Create a new InfoWindow.
+      infoWindow = new google.maps.InfoWindow({
+        position: mapsMouseEvent.latLng,
+      });
+      infoWindow.setContent(
+        JSON.stringify(mapsMouseEvent.latLng.toJSON(), null, 2)
+      );
+      infoWindow.open(map);
+    });
+  }

@@ -1,0 +1,75 @@
+form {
+    display: flex;
+    flex-direction: column;
+    width: 23vw;
+    top: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 15vh;
+    float:left;
+    margin-left:20vw;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(195, 218, 236);
+  }
+  
+  input,
+  textarea {
+    margin-bottom: 20px;
+    padding: 5px;
+    font-size: 15px;
+    font-family:sans-serif;
+    /* background-color: rgb(195,218,236); */
+  }
+  
+  .submit{
+    width:70px;
+    font-size: 15px;
+    align-self: center;
+    background-color:rgb(45, 45, 87);
+    /* border-style: none; */
+    border-radius: 15px;
+    border:solid 1px white;
+    color:aliceblue;
+    padding:8px;
+    
+    
+  }
+  .submit:hover{
+    background-color:rgb(155, 155, 194);
+    
+  }
+  .submit:active{
+    background-color:rgb(223, 223, 236);
+    color:black;
+    
+  }
+  body{
+    background-image: url("./bg2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: none;
+    
+  }
+  
+  #img{
+   color:aliceblue;
+   font-style: italic;
+  }
+  
+#map{
+  height: 400px;
+  width: 400px;
+  float:right;
+  margin-top: 15vh;
+  margin-right:10vw;
+}
+
+#lat, #lon{
+  pointer-events: none;
+  background-color: antiquewhite;
+  border:none;
+}

@@ -1,0 +1,244 @@
+body{
+  background-image: url("./bg2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: none;
+  
+}
+
+.Hospital-Name{
+font-family: Arial, Helvetica, sans-serif;
+color:aqua;
+font-size: 30px;
+text-align: center;
+padding: 20px;
+
+background-color: rgba(0, 0, 0, 0.452);
+top:0;
+
+}
+
+.container{
+  
+width:30vw;
+top: 0;
+right: 0;
+margin: auto;
+margin-top: 100px;
+text-align: center;
+
+
+}
+
+.facility-box{
+color:black;
+background-color: aliceblue;
+padding: 5px;
+margin:10px;
+overflow: hidden;
+height: 100px;
+width: 40vw;
+
+}
+
+h3{
+/* color: aliceblue; */
+color:rgb(84, 84, 126);
+margin:5px;
+}
+
+.start-time,
+.end-time{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+.start-time{
+margin-left: 10px;
+}
+.end-time{
+margin-right: 10px;
+}
+
+.time{
+align-self: center;
+margin-left: 10px;
+color: rgb(73, 73, 90);
+}
+
+.time-box{
+display: flex;
+flex-direction: row;
+justify-self: center;
+justify-content: space-between;
+}
+
+.end-time{
+float:right;
+}
+
+h4{
+color:rgb(75, 60, 95);
+}
+
+.add-fac{
+
+height: 70px;
+border: white dashed 1px;
+margin:10px;
+margin-top: 20px;
+color: aliceblue;
+font-size: 50px;
+
+
+top:0;
+bottom:0;
+left:0;
+right:0;
+}
+
+
+.add-fac:hover{
+background-color: rgba(61, 45, 82, 0.849);
+}
+
+.facility-box:hover{
+background-color: rgba(212, 232, 252, 0.918);
+border-radius: 20px;
+transition: border-radius 0.5s;
+}
+
+.facility{
+display: flex;
+flex-direction: row;
+}
+
+.del{
+margin:10px;
+width:2vw;
+right: 0;
+display: flex;
+flex-direction: column;
+align-self: center;
+
+}
+
+.close{
+width:60px;
+margin-left: 20px;
+opacity: 80%;
+}
+
+.close:hover{
+opacity: 100%;
+}
+
+.model {
+display: none; 
+position: fixed; /* Stay in place */
+z-index: 3; /* Sit on top */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; 
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0, 0, 0, 0.699); /* Black w/ opacity */
+}
+
+.add-form,
+.content{
+top:0;
+right:0;
+left:0;
+bottom:0;
+margin:auto;
+width:20vw;
+display:flex;
+flex-direction: column;
+background-color: rgba(178, 196, 211, 0.842);
+margin-top:20vh;
+padding: 20px;
+font-size: large;
+color:rgb(25, 22, 27);
+}
+
+label{
+margin: 10px;
+align-self: flex-start;
+}
+
+input{
+width:15vw;
+margin-bottom: 10px;
+background-color: rgba(241, 239, 239, 0.918);
+color:rgb(25, 22, 27);
+border-style: none;
+}
+
+#fac{
+padding: 2px;
+}
+
+.submit{
+width:5vw;
+margin:10px;
+align-self: center;
+padding: 5px;
+background-color: rgba(24, 16, 26, 0.63);
+color:aliceblue;
+}
+
+.submit:hover{
+background-color: rgba(0, 0, 0, 0.897);
+}
+
+#start-time,
+#end-time{
+width:10vw;
+align-self: flex-start;
+}
+
+.layer{
+top:0;
+bottom:0;
+right:0;
+left:0;
+z-index: 4;
+}
+
+.no-pointer{
+pointer-events: none;
+}
+
+.header-message{
+/* display: none; */
+height:5-px;
+background-color: rgba(249, 252, 173, 0.712);
+padding: 10px;
+color:rgb(47, 60, 71);
+}
+
+.close-model{
+  top:0;
+  right:0;
+  left:0;
+  right:0;
+  width: 100%;
+  height: 100%;
+  z-index:-1;
+  background-color: rgba(0, 0, 0, 0.329);
+}
+
+.add-form{
+  position: absolute;
+  height:300px;
+}
+
+.content{
+  margin-top:200px;
+  position: absolute;
+  height: 50px;
+}
+
